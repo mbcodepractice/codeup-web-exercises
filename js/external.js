@@ -4,7 +4,7 @@ console.log("hello from external javascript");
 
 alert("welcome to my website!");
 
-let userFavoriteColor=prompt("what ia your favorite color?");
+let userFavoriteColor=prompt("what is your favorite color?");
 console.log('userFavoriteColor');
 
 alert('Cool, ' + userFavoriteColor + ' is my favorite color too!');
