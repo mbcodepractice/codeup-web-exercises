@@ -12,7 +12,10 @@
 function  sayHello(name){
     return `hello, ${name}`;
 
+
 }
+let hello=sayHello("malik");
+console.log(hello);
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -20,6 +23,7 @@ function  sayHello(name){
  *
  * console.log 'helloMessage' to check your work
  */
+
 console.log(sayHello("bob"));
 /**
  * TODO:
@@ -69,7 +73,7 @@ console.log(random);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 function calculateTip(tipPercentage,totalBill){
-   return tipPercentage * totalBill;
+   return tipPercentage * totalBill.toFixed(2);
 }
 let tip1=calculateTip(.20,20);
 console.log(tip1);
@@ -79,7 +83,7 @@ console.log(tip1);
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-let percent=prompt("what percentage?");
+let percent=parseFloat(prompt("what percentage?"));
 let totalBill=prompt("totalBill?");
 let calculatedTip=calculateTip(percent,totalBill);
 alert(`the total tip ${calculatedTip}`);
